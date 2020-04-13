@@ -83,7 +83,7 @@ int main(void)
 
 void CallElevator(void)
 {
-	int i, input;
+	int i, input, notCallCount = 0;
 
 	for (i = 0; i < MAX_PERSON; i++)
 	{
@@ -137,6 +137,16 @@ void CallElevator(void)
 				printf("Person %c canceled the call.\n", i + 65);
 			}
 		}
+		if (p[i].Call == false)
+		{
+			notCallCount++;
+		}
+	}
+
+	if (notCallCount == MAX_PERSON)
+	{
+		printf("It seems nobody called the elevator.\nThank you for using this program!\n");
+		exit(0);
 	}
 }
 
