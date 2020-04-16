@@ -20,7 +20,10 @@ This is a simple elevator algorithm written in C.
 ## Installation
 This works with GCC on Linux.
 1. Open terminal.
-2. Clone the repository using Git. (https://github.com/Hiyabye/Elevator.git)
+2. Clone the repository using Git.
+```sh
+git clone https://github.com/Hiyabye/Elevator.git
+```
 3. Go to the directory with the source code in it.
 4. Type this in the terminal to compile the source code.
 ```sh
