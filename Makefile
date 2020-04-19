@@ -1,19 +1,34 @@
-app.out: main.o person.o elevator.o
-	@gcc -o app.out main.o person.o elevator.o
+# Usage:
+# make					# compile all binary
+# make clean		# remove All objects
+# $@						# Name of the current target
+# $^						# List of dependencies of the current target
+
+CC = gcc				# compiler to use
+CFLAGS = -W -Wall
+TARGET = app.out
+OBJECTS = main.o person.o elevator.o
+
+.PHONY: clean
+all : $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	@$(CC) $(CFLAGS) -o $@ $^
 	@echo "Linked all files"
 
-main.o: main.c person.h elevator.h
-	@gcc -c -o main.o main.c
-	@echo "Builded main.c"
+main.o: src/main.c src/person.h src/elevator.h
+	@$(CC) $(CFLAGS) -c -o main.o src/main.c
+	@echo "Builded main.o"
 
-person.o: person.c person.h elevator.h
-	@gcc -c -o person.o person.c
-	@echo "Builded person.c"
+person.o: src/person.c src/person.h src/elevator.h
+	@$(CC) $(CFLAGS) -c -o person.o src/person.c
+	@echo "Builded person.o"
 
-elevator.o: elevator.c person.h elevator.h
-	@gcc -c -o elevator.o elevator.c
-	@echo "Builded elevator.c"
+elevator.o: src/elevator.c src/person.h src/elevator.h
+	@$(CC) $(CFLAGS) -c -o elevator.o src/elevator.c
+	@echo "Builded elevator.o"
 
 clean:
-	@rm -f *.o
+	@echo "Cleaning up..."
+	@rm *.o
 	@echo "Removed all object files"
