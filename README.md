@@ -3,6 +3,7 @@ Elevator
 ========
 
 [![CodeFactor](https://www.codefactor.io/repository/github/hiyabye/elevator/badge?style=flat-square)](https://www.codefactor.io/repository/github/hiyabye/elevator)
+[![GitHub license](https://img.shields.io/github/license/Hiyabye/Elevator?style=flat-square)](https://github.com/Hiyabye/Elevator/blob/master/LICENSE)
 
 <!-- Simple description of the project -->
 This is a simple elevator algorithm written in C.
@@ -13,10 +14,10 @@ This is a simple elevator algorithm written in C.
   * [Instructions](#instructions)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Installation](#installation)
-* [Contributing](#contributing)
+  * [Installing](#installing)
+  * [Contributing](#contributing)
 * [License](#license)
-* [Future Plans](#future-plans)
+* [Future Goals](#future-goals)
 * [Acknowledgments](#acknowledgments)
   * [Why I made this](#why-i-made-this)
   * [Contact](#contact)
@@ -38,13 +39,13 @@ This is a simple elevator algorithm written in C.
 
 <!-- This section explains how to install the project -->
 ## Getting Started
-### Installation
+### Installing
 <!-- Short sentence about the what OS can this be installed -->
 It can be installed on operating systems which supports Visual Studio Code.
 [How to install](https://code.visualstudio.com/docs/editor/versioncontrol#_cloning-a-repository)
 
 <!-- This section is about orders to contribute -->
-## Contributing
+### Contributing
 Please help. Any type of bug fix, and new features are welcome. Issues are also welcome. Just please help.
 
 <!-- This section is about the license of the project -->
@@ -52,7 +53,7 @@ Please help. Any type of bug fix, and new features are welcome. Issues are also 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <!-- This section explains the ultimate goal for the project -->
-## Plans
+## Future Goals
 - Changing names of functions to increase readability.
 - Improving the algorithm of how the elevator works.
 - Replace everything with pointers.
