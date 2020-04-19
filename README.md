@@ -1,6 +1,7 @@
 Elevator
 ========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d88d6155eead4cf0a2745b9cba3cdd1e)](https://app.codacy.com/manual/hiyabye0465/Elevator?utm_source=github.com&utm_medium=referral&utm_content=Hiyabye/Elevator&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/hiyabye/elevator/badge)](https://www.codefactor.io/repository/github/hiyabye/elevator)
 
 This is a simple elevator algorithm written in C.
