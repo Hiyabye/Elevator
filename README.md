@@ -46,6 +46,8 @@ This is a simple elevator algorithm written in C.
 It can be installed on operating systems which supports Visual Studio Code.
 [How to install](https://code.visualstudio.com/docs/editor/versioncontrol#_cloning-a-repository)
 
+You can either compile the code yourself or use "make" - see the [Makefile](Makefile) for details.
+
 <!-- This section is about orders to contribute -->
 ### Contributing
 Please help.
@@ -63,7 +65,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * Change function names to increase readability.
 * Improve algorithm of how the elevator works.
 * Replace everything with pointers.
-* Write a better Makefile.
 * Add pictures to README. (Examples of how it works)
 * Good-looking interface.
 
