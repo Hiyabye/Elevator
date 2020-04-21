@@ -1,9 +1,9 @@
-# make			# compile all binary
-# make clean			# remove all objects and executable files
-# $@			# Name of the current target
-# $^			# List of dependencies of the current target
+# make          # compile all binary
+# make clean    # remove all objects and executable files
+# $@            # Name of the current target
+# $^            # List of dependencies of the current target
 
-CC = gcc			# compiler to use
+CC = gcc        # compiler to use
 CFLAGS = -W -Wall
 TARGET = app.out
 OBJECTS = main.o person.o elevator.o
@@ -31,5 +31,3 @@ clean:
 	@echo "Cleaning up..."
 	@rm $(OBJECTS)
 	@echo "Removed all object files"
-	@rm $(TARGET)
-	@echo "Removed all executable files"
