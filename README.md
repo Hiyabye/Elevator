@@ -43,17 +43,21 @@ This is a simple elevator algorithm written in C.
 ## Getting Started
 ### Installing
 <!-- Short sentence about the what OS can this be installed -->
-It can be installed on operating systems which supports Visual Studio Code.
-[How to install](https://code.visualstudio.com/docs/editor/versioncontrol#_cloning-a-repository)
-
-You can either compile the code yourself or use "make" - see the [Makefile](Makefile) for details.
-
-<!-- This section is about orders to contribute -->
-### Contributing
-Please help.
-Any type of bug fix, and new features are welcome.
-Issues are also welcome.
-Just please help.
+1. Clone the repository using git.
+```sh
+git clone https://github.com/Hiyabye/Elevator.git
+```
+2. Build Makefile with CMake
+```sh
+cd Elevator
+mkdir build
+cd build
+cmake ..
+```
+3. Build the program with Makefile
+```sh
+make all
+```
 
 <!-- This section is about the license of the project -->
 ## License
