@@ -3,8 +3,9 @@ Elevator
 ========
 
 <!-- Some badges giving the reader a summary of the project -->
-[![CodeFactor](https://www.codefactor.io/repository/github/hiyabye/elevator/badge?style=flat-square)](https://www.codefactor.io/repository/github/hiyabye/elevator)
-[![GitHub license](https://img.shields.io/github/license/Hiyabye/Elevator?style=flat-square)](https://github.com/Hiyabye/Elevator/blob/master/LICENSE)
+[![CodeFactor](https://www.codefactor.io/repository/github/hiyabye/elevator/badge)](https://www.codefactor.io/repository/github/hiyabye/elevator)
+[![GitHub license](https://img.shields.io/github/license/Hiyabye/Elevator)](https://github.com/Hiyabye/Elevator/blob/master/LICENSE)
+![C/C++ CI](https://github.com/Hiyabye/Elevator/workflows/C/C++%20CI/badge.svg?branch=master)
 
 <!-- Simple description of the project -->
 This is a simple elevator algorithm written in C.
