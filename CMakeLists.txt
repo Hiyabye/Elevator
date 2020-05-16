@@ -5,10 +5,20 @@ cmake_minimum_required(VERSION 3.1)
 project(Elevator)
 
 # Prints every warnings and errors
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 
 # Set sources variable
-set(SOURCES src/main.c src/person.h src/person.c src/elevator.h src/elevator.c)
+set(SOURCES src/main.c)
+
+# Add libraries
+add_library(person STATIC src/person.c)
+add_library(elevator STATIC src/elevator.c)
+
+# Set libraries variable
+set(LIBRARIES person elevator)
 
 # Add executable target
 add_executable(Elevator ${SOURCES})
+
+# Link libraries to target
+target_link_libraries(Elevator ${LIBRARIES})
