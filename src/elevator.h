@@ -17,8 +17,14 @@ struct Elevator
 
 struct Elevator e[MAX_ELEVATOR];
 
+// Determines the distance between the person and elevator
+// It does that while considering the direction of the two objects
 int CalculateDistance(int pId, int eId);
+
+// Calculates the closest elevator to the person
 int GetClosestElevator(int num);
+
+// Moves the elevator based on its calls, direction and location
 void MoveElevator(void);
 
 #endif

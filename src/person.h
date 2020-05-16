@@ -1,7 +1,6 @@
 #ifndef __PERSON_H__
 #define __PERSON_H__
 
-#include <stdlib.h>
 #include <stdbool.h>
 
 #define MAX_PERSON 6
@@ -21,8 +20,14 @@ struct Person
 
 struct Person p[MAX_PERSON];
 
+// Calls the elevator by the person's input
 void CallElevator(void);
+
+// Gets the closest elevator for the person
+// Also it manages the movement of the person
 void CheckElevator(void);
+
+// This function outputs the location of the person
 void CheckPerson(void);
 
 #endif

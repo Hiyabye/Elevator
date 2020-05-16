@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "person.h"
 #include "elevator.h"
 
+// Calls the elevator by the person's input
 void CallElevator(void)
 {
 	int i, input, notCallCount = 0;
@@ -71,6 +73,9 @@ void CallElevator(void)
 	}
 }
 
+// Gets the closest elevator for the person
+// Also it manages the movement of the person
+// TODO - Make function simple
 void CheckElevator(void)
 {
 	int i;
@@ -127,6 +132,7 @@ void CheckElevator(void)
 	}
 }
 
+// This function outputs the location of the person
 void CheckPerson(void)
 {
 	int i;

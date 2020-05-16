@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "person.h"
 #include "elevator.h"
 
+// Clears the console window
 void ClearScreen(void);
 
 int main(void)
 {
 	int i;
 
+	// Default value of each person
 	for (i = 0; i < MAX_PERSON; i++)
 	{
 		p[i].Location = 1;
@@ -18,6 +21,7 @@ int main(void)
 		p[i].InElevator = false;
 	}
 
+	// Default value of each elevator
 	for (i = 0; i < MAX_ELEVATOR; i++)
 	{
 		e[i].Location = 1;
@@ -47,6 +51,7 @@ int main(void)
 	return 0;
 }
 
+// Clears the console window
 void ClearScreen(void)
 {
   system("@cls||clear");
